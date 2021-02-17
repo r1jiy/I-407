@@ -1,0 +1,815 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oborudovanie "http://www.oborudovanie.com/ontologies/oborudovanie.owl#" >
+    <!ENTITY оборудование "http://www.oborudovanie.com/ontologies/oborudovanie.owl#оборудование," >
+    <!ENTITY оборудование2 "http://www.semanticweb.org/user/ontologies/2021/1/untitled-ontology-11#оборудование," >
+]>
+
+
+<rdf:RDF xmlns="http://www.oborudovanie.com/ontologies/oborudovanie.owl#"
+     xml:base="http://www.oborudovanie.com/ontologies/oborudovanie.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:оборудование="&oborudovanie;оборудование,"
+     xmlns:oborudovanie="http://www.oborudovanie.com/ontologies/oborudovanie.owl#"
+     xmlns:оборудование2="http://www.semanticweb.org/user/ontologies/2021/1/untitled-ontology-11#оборудование,">
+    <owl:Ontology rdf:about="http://www.oborudovanie.com/ontologies/oborudovanie.owl">
+        <оборудование2:_выполняющее_ф-ции_контролера>аннотоция инновационного оборудования</оборудование2:_выполняющее_ф-ции_контролера>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#оборудование,_выполняющее_ф-ции_контролера -->
+
+    <owl:AnnotationProperty rdf:about="&oborudovanie;оборудование,_выполняющее_ф-ции_контролера">
+        <rdfs:subPropertyOf rdf:resource="&rdfs;comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#hasBudget -->
+
+    <owl:ObjectProperty rdf:about="&oborudovanie;hasBudget">
+        <rdfs:subPropertyOf rdf:resource="&oborudovanie;hasKriterii"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#hasCost -->
+
+    <owl:ObjectProperty rdf:about="&oborudovanie;hasCost"/>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#hasDefekt -->
+
+    <owl:ObjectProperty rdf:about="&oborudovanie;hasDefekt">
+        <rdfs:range rdf:resource="&oborudovanie;defekt"/>
+        <rdfs:subPropertyOf rdf:resource="&oborudovanie;hasParametr"/>
+        <rdfs:domain rdf:resource="&oborudovanie;деталь"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#hasKachestvo -->
+
+    <owl:ObjectProperty rdf:about="&oborudovanie;hasKachestvo">
+        <rdfs:subPropertyOf rdf:resource="&oborudovanie;hasKriterii"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#hasKriterii -->
+
+    <owl:ObjectProperty rdf:about="&oborudovanie;hasKriterii"/>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#hasMarkirovka -->
+
+    <owl:ObjectProperty rdf:about="&oborudovanie;hasMarkirovka"/>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#hasParametr -->
+
+    <owl:ObjectProperty rdf:about="&oborudovanie;hasParametr">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&oborudovanie;деталь"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#hasRazmer -->
+
+    <owl:ObjectProperty rdf:about="&oborudovanie;hasRazmer">
+        <rdfs:subPropertyOf rdf:resource="&oborudovanie;hasParametr"/>
+        <rdfs:range rdf:resource="&oborudovanie;razmer"/>
+        <rdfs:domain rdf:resource="&oborudovanie;деталь"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#hasSherohovatost -->
+
+    <owl:ObjectProperty rdf:about="&oborudovanie;hasSherohovatost">
+        <rdfs:subPropertyOf rdf:resource="&oborudovanie;hasParametr"/>
+        <rdfs:range rdf:resource="&oborudovanie;sherohovatost"/>
+        <rdfs:domain rdf:resource="&oborudovanie;деталь"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#hasSrok -->
+
+    <owl:ObjectProperty rdf:about="&oborudovanie;hasSrok">
+        <rdfs:subPropertyOf rdf:resource="&oborudovanie;hasKriterii"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#hasBudget -->
+
+    <owl:DatatypeProperty rdf:about="&oborudovanie;hasBudget"/>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#hasDiametr -->
+
+    <owl:DatatypeProperty rdf:about="&oborudovanie;hasDiametr"/>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#hasSrok -->
+
+    <owl:DatatypeProperty rdf:about="&oborudovanie;hasSrok"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#IR-специалист -->
+
+    <owl:Class rdf:about="&oborudovanie;IR-специалист">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;команда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#bolshe -->
+
+    <owl:Class rdf:about="&oborudovanie;bolshe">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oborudovanie;razmer"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oborudovanie;hasDiametr"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="&xsd;integer">10</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&oborudovanie;razmer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oborudovanie;hasDiametr"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&oborudovanie;menshe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#defekt -->
+
+    <owl:Class rdf:about="&oborudovanie;defekt">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;parametrs"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oborudovanie;hasDefekt"/>
+                <owl:someValuesFrom rdf:resource="&oborudovanie;defekt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#detaleKolco -->
+
+    <owl:Class rdf:about="&oborudovanie;detaleKolco">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;деталь"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#detaleShtucer -->
+
+    <owl:Class rdf:about="&oborudovanie;detaleShtucer">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;деталь"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#detaleStakan -->
+
+    <owl:Class rdf:about="&oborudovanie;detaleStakan">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;деталь"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#detaleVtulka -->
+
+    <owl:Class rdf:about="&oborudovanie;detaleVtulka">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;деталь"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#markirovka -->
+
+    <owl:Class rdf:about="&oborudovanie;markirovka">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;свойства"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oborudovanie;hasMarkirovka"/>
+                <owl:someValuesFrom rdf:resource="&oborudovanie;markirovka"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&oborudovanie;parametrs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#menshe -->
+
+    <owl:Class rdf:about="&oborudovanie;menshe">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oborudovanie;razmer"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oborudovanie;hasDiametr"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="&xsd;integer">10</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&oborudovanie;razmer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oborudovanie;hasDiametr"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#parametrs -->
+
+    <owl:Class rdf:about="&oborudovanie;parametrs">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;свойства"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#razmer -->
+
+    <owl:Class rdf:about="&oborudovanie;razmer">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;parametrs"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oborudovanie;hasRazmer"/>
+                <owl:someValuesFrom rdf:resource="&oborudovanie;razmer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#sherohovatost -->
+
+    <owl:Class rdf:about="&oborudovanie;sherohovatost">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;parametrs"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oborudovanie;hasSherohovatost"/>
+                <owl:someValuesFrom rdf:resource="&oborudovanie;sherohovatost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#бухгалтер -->
+
+    <owl:Class rdf:about="&oborudovanie;бухгалтер">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;команда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#бюджет -->
+
+    <owl:Class rdf:about="&oborudovanie;бюджет">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oborudovanie;критерии_успеха"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oborudovanie;hasBudget"/>
+                        <owl:someValuesFrom rdf:resource="&oborudovanie;бюджет"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#владелец_проекта -->
+
+    <owl:Class rdf:about="&oborudovanie;владелец_проекта">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;команда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#деталь -->
+
+    <owl:Class rdf:about="&oborudovanie;деталь"/>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#директор -->
+
+    <owl:Class rdf:about="&oborudovanie;директор">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;стейкхолдеры"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#затраты -->
+
+    <owl:Class rdf:about="&oborudovanie;затраты"/>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#затраты_наисследования -->
+
+    <owl:Class rdf:about="&oborudovanie;затраты_наисследования">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oborudovanie;затраты"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oborudovanie;hasCost"/>
+                        <owl:someValuesFrom rdf:resource="&oborudovanie;затраты_наисследования"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#затраты_напроверку -->
+
+    <owl:Class rdf:about="&oborudovanie;затраты_напроверку">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oborudovanie;затраты"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oborudovanie;hasCost"/>
+                        <owl:someValuesFrom rdf:resource="&oborudovanie;затраты_напроверку"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#затраты_напроизводство -->
+
+    <owl:Class rdf:about="&oborudovanie;затраты_напроизводство">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oborudovanie;затраты"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oborudovanie;hasCost"/>
+                        <owl:someValuesFrom rdf:resource="&oborudovanie;затраты_напроизводство"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#затраты_наразработку -->
+
+    <owl:Class rdf:about="&oborudovanie;затраты_наразработку">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oborudovanie;затраты"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oborudovanie;hasCost"/>
+                        <owl:someValuesFrom rdf:resource="&oborudovanie;затраты_наразработку"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#инвестор -->
+
+    <owl:Class rdf:about="&oborudovanie;инвестор">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;стейкхолдеры"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#инженер -->
+
+    <owl:Class rdf:about="&oborudovanie;инженер">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;команда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#инженерглавный -->
+
+    <owl:Class rdf:about="&oborudovanie;инженерглавный">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;инженер"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#инженерпо_качеству -->
+
+    <owl:Class rdf:about="&oborudovanie;инженерпо_качеству">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;инженер"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#инженерэлектронщик -->
+
+    <owl:Class rdf:about="&oborudovanie;инженерэлектронщик">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;инженер"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#качество -->
+
+    <owl:Class rdf:about="&oborudovanie;качество">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oborudovanie;критерии_успеха"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oborudovanie;hasKachestvo"/>
+                        <owl:someValuesFrom rdf:resource="&oborudovanie;качество"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#команда -->
+
+    <owl:Class rdf:about="&oborudovanie;команда">
+        <owl:disjointWith rdf:resource="&oborudovanie;стейкхолдеры"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#критерии_успеха -->
+
+    <owl:Class rdf:about="&oborudovanie;критерии_успеха"/>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#менеджер -->
+
+    <owl:Class rdf:about="&oborudovanie;менеджер">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;команда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#поставщик -->
+
+    <owl:Class rdf:about="&oborudovanie;поставщик">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;стейкхолдеры"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#программист -->
+
+    <owl:Class rdf:about="&oborudovanie;программист">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;команда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#рискКачества -->
+
+    <owl:Class rdf:about="&oborudovanie;рискКачества">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;риски"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#рискКонкуренетоспособности -->
+
+    <owl:Class rdf:about="&oborudovanie;рискКонкуренетоспособности">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;риски"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#рискПоставок -->
+
+    <owl:Class rdf:about="&oborudovanie;рискПоставок">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;риски"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#рискРасписания -->
+
+    <owl:Class rdf:about="&oborudovanie;рискРасписания">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;риски"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#рискФинансовый -->
+
+    <owl:Class rdf:about="&oborudovanie;рискФинансовый">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;риски"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#риски -->
+
+    <owl:Class rdf:about="&oborudovanie;риски"/>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#свойства -->
+
+    <owl:Class rdf:about="&oborudovanie;свойства">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;станок-контролер"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#срок -->
+
+    <owl:Class rdf:about="&oborudovanie;срок">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&oborudovanie;критерии_успеха"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&oborudovanie;hasSrok"/>
+                        <owl:someValuesFrom rdf:resource="&oborudovanie;срок"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#станок-контролер -->
+
+    <owl:Class rdf:about="&oborudovanie;станок-контролер"/>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#стейкхолдеры -->
+
+    <owl:Class rdf:about="&oborudovanie;стейкхолдеры"/>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#финансист -->
+
+    <owl:Class rdf:about="&oborudovanie;финансист">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;команда"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#экономист -->
+
+    <owl:Class rdf:about="&oborudovanie;экономист">
+        <rdfs:subClassOf rdf:resource="&oborudovanie;команда"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#budget -->
+
+    <owl:NamedIndividual rdf:about="&oborudovanie;budget">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oborudovanie;hasBudget"/>
+                <owl:someValuesFrom rdf:resource="&oborudovanie;бюджет"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&oborudovanie;hasBudget"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasBudget rdf:datatype="&xsd;integer">6000000</hasBudget>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#data -->
+
+    <owl:NamedIndividual rdf:about="&oborudovanie;data">
+        <rdf:type rdf:resource="&oborudovanie;срок"/>
+        <hasSrok rdf:datatype="&xsd;dateTime">01.12.2022</hasSrok>
+        <hasSrok rdf:resource="&oborudovanie;data"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oborudovanie.com/ontologies/oborudovanie.owl#kolco -->
+
+    <owl:NamedIndividual rdf:about="&oborudovanie;kolco">
+        <rdf:type rdf:resource="&oborudovanie;bolshe"/>
+        <rdf:type rdf:resource="&oborudovanie;detaleKolco"/>
+        <rdf:type rdf:resource="&oborudovanie;menshe"/>
+        <hasDiametr rdf:datatype="&xsd;integer">10</hasDiametr>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&oborudovanie;бюджет"/>
+            <rdf:Description rdf:about="&oborudovanie;качество"/>
+            <rdf:Description rdf:about="&oborudovanie;срок"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&oborudovanie;IR-специалист"/>
+            <rdf:Description rdf:about="&oborudovanie;бухгалтер"/>
+            <rdf:Description rdf:about="&oborudovanie;владелец_проекта"/>
+            <rdf:Description rdf:about="&oborudovanie;инженер"/>
+            <rdf:Description rdf:about="&oborudovanie;менеджер"/>
+            <rdf:Description rdf:about="&oborudovanie;программист"/>
+            <rdf:Description rdf:about="&oborudovanie;финансист"/>
+            <rdf:Description rdf:about="&oborudovanie;экономист"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&oborudovanie;рискКачества"/>
+            <rdf:Description rdf:about="&oborudovanie;рискКонкуренетоспособности"/>
+            <rdf:Description rdf:about="&oborudovanie;рискПоставок"/>
+            <rdf:Description rdf:about="&oborudovanie;рискРасписания"/>
+            <rdf:Description rdf:about="&oborudovanie;рискФинансовый"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&oborudovanie;инженерглавный"/>
+            <rdf:Description rdf:about="&oborudovanie;инженерпо_качеству"/>
+            <rdf:Description rdf:about="&oborudovanie;инженерэлектронщик"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&oborudovanie;defekt"/>
+            <rdf:Description rdf:about="&oborudovanie;razmer"/>
+            <rdf:Description rdf:about="&oborudovanie;sherohovatost"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&oborudovanie;директор"/>
+            <rdf:Description rdf:about="&oborudovanie;инвестор"/>
+            <rdf:Description rdf:about="&oborudovanie;поставщик"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&oborudovanie;затраты_наисследования"/>
+            <rdf:Description rdf:about="&oborudovanie;затраты_напроверку"/>
+            <rdf:Description rdf:about="&oborudovanie;затраты_напроизводство"/>
+            <rdf:Description rdf:about="&oborudovanie;затраты_наразработку"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&oborudovanie;detaleKolco"/>
+            <rdf:Description rdf:about="&oborudovanie;detaleShtucer"/>
+            <rdf:Description rdf:about="&oborudovanie;detaleStakan"/>
+            <rdf:Description rdf:about="&oborudovanie;detaleVtulka"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
